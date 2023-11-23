@@ -1,0 +1,16 @@
+#label-with-icon {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#label {
+    margin-left: 5px;
+}

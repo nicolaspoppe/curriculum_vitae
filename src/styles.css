@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Typography */
+
+h1 {
+    color: #2f5496;
+}
+
+.centered-text {
+    text-align: center;
+}
+
