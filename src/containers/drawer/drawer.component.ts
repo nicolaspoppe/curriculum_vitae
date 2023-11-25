@@ -4,16 +4,26 @@ import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { LabelWithIconComponent } from '../../components/LabelWithIcon/labelWithIcon.component';
 import { DrawerDividerComponent } from '../../components/DrawerDivider/drawerDivider.component';
+import { LanguagesSectionComponent } from '../languagesSection/languagesSection.component';
 
 @Component({
   selector: 'Drawer',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatIconModule, LabelWithIconComponent, DrawerDividerComponent],
   templateUrl: './drawer.component.html',
-  styleUrl: './drawer.component.css'
+  styleUrl: './drawer.component.css',
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    MatIconModule,
+    LabelWithIconComponent,
+    DrawerDividerComponent,
+    LanguagesSectionComponent,
+  ],
 })
 export class DrawerComponent {
-  house:string = "Meise, 1860";
-  permisA1: string = "Permis A1";
-  permisB: string = "Permis B";
+  name: string = 'Nicolas Poppe';
+  email: string = 'NicolasPoppe123@gmail.com';
+  house: string = 'Meise, 1860 in Belgium';
+  permisA1: string = 'Permis A1';
+  permisB: string = 'Permis B';
 }

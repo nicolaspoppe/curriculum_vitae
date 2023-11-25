@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,8 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class LabelWithIconComponent {
   @Input()
-  label!: string;
-
-  @Input()
   iconLabel!: string;
+
+  @ContentChild('label')
+  label!: TemplateRef<any>;
 }

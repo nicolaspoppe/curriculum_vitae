@@ -9,8 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [CommonModule, RouterOutlet, DrawerComponent, MatIconModule],
   templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.css'
+  styleUrl: './homepage.component.css',
 })
-export class HomePageComponent {
-  
-}
+export class HomePageComponent {}

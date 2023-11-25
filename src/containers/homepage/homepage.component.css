@@ -1,15 +1,16 @@
 #drawer {
-    width: 30%;
-    height: 100%;
-    border-right: solid blue 5px;
+  width: 20%;
+  height: 100%;
+  border-right: solid blue 5px;
+  background-color: #eeeeee;
 }
 
 #homepage-content {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 #main-content {
-    width: 60%;
+  width: 60%;
 }

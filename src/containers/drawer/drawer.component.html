@@ -1,9 +1,60 @@
+<div id="profilePicContainer">
+  <img src="../../assets/nicolas.jpg" id="profilePic" />
+</div>
 <h1 class="centered-text">POPPE Nicolas</h1>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" height="24" width="24"/>
-<DrawerDivider/>
-<LabelWithIcon [label]="house" iconLabel="home"></LabelWithIcon>
-<LabelWithIcon [label]="permisA1" iconLabel="directions_bike"></LabelWithIcon>
-<LabelWithIcon [label]="permisB" iconLabel="directions_car"></LabelWithIcon>
+<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" height="24" width="24"/> -->
 
-<DrawerDivider/>
+<LabelWithIcon
+  iconLabel="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+>
+  <ng-template #label let-data="data">
+    <a
+      href="https://www.linkedin.com/in/nicolas-poppe-101804243/"
+      target="_blank"
+    >
+      <p>
+        {{ name }}
+      </p>
+    </a>
+  </ng-template>
+</LabelWithIcon>
+
+<LabelWithIcon iconLabel="email">
+  <ng-template #label let-data="data">
+    <a [href]="'mailto: ' + email">
+      <p>
+        {{ email }}
+      </p>
+    </a>
+  </ng-template>
+</LabelWithIcon>
+
+<DrawerDivider />
+
+<!-- Second section -->
+<LabelWithIcon iconLabel="home">
+  <ng-template #label let-data="data">
+    <p>
+      {{ house }}
+    </p>
+  </ng-template>
+</LabelWithIcon>
+<LabelWithIcon iconLabel="directions_bike">
+  <ng-template #label let-data="data">
+    <p>
+      {{ permisA1 }}
+    </p>
+  </ng-template>
+</LabelWithIcon>
+<LabelWithIcon iconLabel="directions_car">
+  <ng-template #label let-data="data">
+    <p>
+      {{ permisB }}
+    </p>
+  </ng-template>
+</LabelWithIcon>
+
+<DrawerDivider />
+
+<LanguagesSection />
