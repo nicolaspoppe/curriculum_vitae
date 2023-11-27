@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { LabelWithIconComponent } from '../../components/LabelWithIcon/labelWithIcon.component';
+import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWithIcon.component';
 import { DrawerDividerComponent } from '../../components/DrawerDivider/drawerDivider.component';
 import { LanguagesSectionComponent } from '../../components/languagesSection/languagesSection.component';
 

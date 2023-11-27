@@ -1,7 +1,7 @@
 import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { LabelWithIconComponent } from '../../components/LabelWithIcon/labelWithIcon.component';
+import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWithIcon.component';
 
 @Component({
   selector: 'CloseableSection',

@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { LabelWithIconComponent } from '../LabelWithIcon/labelWithIcon.component';
+import { LabelWithIconComponent } from '../labelWithIcon/labelWithIcon.component';
 
 @Component({
   selector: 'SingleExperience',
