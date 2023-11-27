@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ILanguage } from '../../types/ILanguage';
-import { LabelWithIconComponent } from '../../components/LabelWithIcon/labelWithIcon.component';
+import { LabelWithIconComponent } from '../LabelWithIcon/labelWithIcon.component';
 
 @Component({
   selector: 'LanguagesSection',

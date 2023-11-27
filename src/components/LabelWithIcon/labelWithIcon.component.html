@@ -1,17 +1,24 @@
-<div id="container">
-  <div class="row" id="label-with-icon">
-    <mat-icon
-      *ngIf="!iconLabel.startsWith('https://'); else elseBlock"
-      aria-hidden="false"
-      aria-label="Home icon"
-      [fontIcon]="iconLabel"
+<div
+  class="row"
+  id="label-with-icon"
+  [style]="'margin-left: ' + marginLeft + 'px;'"
+>
+  <mat-icon
+    *ngIf="!iconLabel.startsWith('https://'); else elseBlock"
+    aria-hidden="false"
+    aria-label="Home icon"
+    [fontIcon]="iconLabel"
+    class="little-icon"
+    [style]="'color:' + iconColor + ';'"
+  ></mat-icon>
+
+  <ng-template #elseBlock
+    ><img
+      [src]="iconLabel"
+      [height]="30"
+      [width]="iconWidth"
       class="little-icon"
-    ></mat-icon>
+  /></ng-template>
 
-    <ng-template #elseBlock
-      ><img [src]="iconLabel" height="24" width="24" class="little-icon"
-    /></ng-template>
-
-    <ng-container [ngTemplateOutlet]="label"></ng-container>
-  </div>
+  <ng-container [ngTemplateOutlet]="label"></ng-container>
 </div>

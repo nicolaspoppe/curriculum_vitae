@@ -1,0 +1,69 @@
+<CloseableSection sectionTitle="Experience">
+  <ng-template #content>
+    <div class="row-test">
+      <div class="column-icon">
+        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="circle-line"></div>
+        <div id="vertical-last-line"></div>
+      </div>
+      <div class="column-test">
+        <SingleExperience
+          startDate="September 2023"
+          endDate="November 2023"
+          company="Viasat Belgium"
+          companyLink="https://www.viasatconnect.be/fr/"
+          position="Junior Web Developer"
+          description="Working as a full-stack developer, my role revolved around analyzing, developing, and delivering modern 
+            solutions for our clients. This involved handling both frontend and backend development for web and 
+            mobile applications."
+          location="Bruxelles"
+          [technologiesInvolved]="['React', 'NestJS']"
+        />
+      </div>
+    </div>
+    <div class="row-test">
+      <div class="column-icon">
+        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="circle-line"></div>
+        <div id="vertical-last-line"></div>
+      </div>
+      <div class="column-test">
+        <SingleExperience
+          startDate="February 2023"
+          endDate="May 2023"
+          company="Viasat Belgium"
+          companyLink="https://www.viasatconnect.be/"
+          position="Web Developer (Internship)"
+          description="During my internship, I successfully developed a translation website using React and NestJS. This 
+          project allowed me to deepen my understanding of web development frameworks while honing my skills 
+          in creating responsive and efficient web solutions. This experience not only enhanced my technical 
+          abilities but also provided valuable insights into integrating diverse technologies for comprehensive web 
+          solutions."
+          location="Bruxelles"
+          [technologiesInvolved]="['React', 'NestJS']"
+        />
+      </div>
+    </div>
+    <div class="row-test">
+      <div class="column-icon">
+        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="circle-line"></div>
+        <div id="vertical-last-line" style="--display: none"></div>
+      </div>
+      <div class="column-test">
+        <SingleExperience
+          startDate="June 2022"
+          endDate="August 2022"
+          company="Superprof.be"
+          companyLink="https://www.superprof.be/"
+          position="Computer Science Teacher"
+          description="I've had the rewarding experience of assisting students in preparing for their programming exams in 
+          both Java and Python. Guiding them through the intricacies of these languages, I provided 
+          comprehensive support to ensure their understanding and readiness for their examinations. I aimed to 
+          equip them with the knowledge and confidence needed to excel in their programming assessments."
+          [technologiesInvolved]="['Python', 'Java']"
+        />
+      </div>
+    </div>
+  </ng-template>
+</CloseableSection>

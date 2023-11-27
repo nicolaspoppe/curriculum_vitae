@@ -1,8 +1,11 @@
 #drawer {
-  width: 20%;
+  width: 25%;
   height: 100%;
   border-right: solid blue 5px;
   background-color: #eeeeee;
+  position: fixed;
+  top: 0px;
+  overflow-y: auto;
 }
 
 #homepage-content {
@@ -12,5 +15,6 @@
 }
 
 #main-content {
-  width: 60%;
+  width: 70%;
+  margin-left: 26%;
 }

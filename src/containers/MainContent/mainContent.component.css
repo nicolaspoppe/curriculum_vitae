@@ -1,0 +1,39 @@
+.row-test {
+  display: flex;
+}
+
+.column-test {
+  flex: 50%;
+  margin-left: 16px;
+}
+.column-icon {
+  width: 30px;
+  display: flex; /*test*/
+  flex-direction: column; /*test*/
+  /* background-color: red; */
+}
+
+#vertical-line,
+#vertical-last-line {
+  background-color: #2f5496;
+  width: 2px;
+  height: var(--height);
+  margin-left: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vertical-last-line {
+  flex-grow: 1;
+  display: var(--display);
+}
+
+#circle-line {
+  height: 33%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #2f5496;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 20px;
+}

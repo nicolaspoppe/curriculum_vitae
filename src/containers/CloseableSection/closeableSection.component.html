@@ -1,0 +1,16 @@
+<LabelWithIcon
+  [iconLabel]="isOpen ? 'expand_more' : 'chevron_right'"
+  (click)="changeIsOpen()"
+  id="clickable-section-title"
+  iconColor="#2f5496"
+  iconHeight="30"
+  iconWidth="30px"
+  marginLeft="2"
+>
+  <ng-template #label>
+    <h2 class="no-margin-y">{{ sectionTitle }}</h2>
+  </ng-template>
+</LabelWithIcon>
+<div *ngIf="isOpen" id="closeable-content">
+  <ng-container [ngTemplateOutlet]="content"></ng-container>
+</div>

@@ -1,0 +1,17 @@
+#experience-date {
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+#experience-position {
+  margin-left: 6px;
+  color: #2f5496;
+}
+
+#experience-description {
+  color: lightgray;
+}
+
+#experience_company {
+  font-style: italic;
+}

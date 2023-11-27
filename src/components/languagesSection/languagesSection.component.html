@@ -1,7 +1,7 @@
-<p *ngFor="let l of allLanguages">
+<div *ngFor="let l of allLanguages">
   <LabelWithIcon [iconLabel]="l.iconUrl">
-    <ng-template #label let-data="data">
+    <ng-template #label>
       <p>{{ l.language }} : {{ l.level }}</p>
     </ng-template>
   </LabelWithIcon>
-</p>
+</div>

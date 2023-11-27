@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { LabelWithIconComponent } from '../../components/LabelWithIcon/labelWithIcon.component';
 import { DrawerDividerComponent } from '../../components/DrawerDivider/drawerDivider.component';
-import { LanguagesSectionComponent } from '../languagesSection/languagesSection.component';
+import { LanguagesSectionComponent } from '../../components/languagesSection/languagesSection.component';
 
 @Component({
   selector: 'Drawer',
