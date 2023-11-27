@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { DrawerComponent } from '../Drawer/drawer.component';
+import { DrawerComponent } from '../drawer/drawer.component';
 import { MatIconModule } from '@angular/material/icon';
-import { MainContentComponent } from '../MainContent/mainContent.component';
+import { MainContentComponent } from '../mainContent/mainContent.component';
 
 @Component({
   selector: 'HomePage',
