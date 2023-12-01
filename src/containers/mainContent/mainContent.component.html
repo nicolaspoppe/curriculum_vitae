@@ -11,7 +11,7 @@
           startDate="September 2023"
           endDate="November 2023"
           company="Viasat Belgium"
-          companyLink="https://www.viasatconnect.be/fr/"
+          companyLink="https://www.viasatconnect.be/"
           position="Junior Web Developer"
           description="Working as a full-stack developer, my role revolved around analyzing, developing, and delivering modern 
             solutions for our clients. This involved handling both frontend and backend development for web and 
@@ -67,3 +67,46 @@
     </div>
   </ng-template>
 </CloseableSection>
+
+<CloseableSection sectionTitle="Education">
+  <ng-template #content>
+    <div class="row-test">
+      <div class="column-icon">
+        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="circle-line"></div>
+        <div id="vertical-last-line"></div>
+      </div>
+      <div class="column-test">
+        <SingleExperience
+          startDate="September 2020"
+          endDate="June 2023"
+          company="Paul Lambin (IPL)"
+          companyLink="https://www.vinci.be/"
+          position="Bachelor’s degree in Business informatics"
+          location="Bruxelles"
+        />
+        <!-- //TODO : make a custom SingleEducation and add the possibility to put the distinction -->
+      </div>
+    </div>
+    <div class="row-test">
+      <div class="column-icon">
+        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="circle-line"></div>
+        <div id="vertical-last-line" style="--display: none"></div>
+      </div>
+      <div class="column-test">
+        <SingleExperience
+          startDate="September 2012"
+          endDate=" June 2019"
+          company="Emile Bockstael"
+          companyLink="https://ebockstael.com/"
+          position="High School"
+          location="Bruxelles"
+        />
+      </div>
+    </div>
+  </ng-template>
+</CloseableSection>
+
+<CertificationsSection />
+<ReferencesSection />

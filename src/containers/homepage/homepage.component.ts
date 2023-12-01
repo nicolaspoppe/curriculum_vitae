@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { RouterOutlet } from '@angular/router';
 import { DrawerComponent } from '../drawer/drawer.component';
-import { MatIconModule } from '@angular/material/icon';
 import { MainContentComponent } from '../mainContent/mainContent.component';
 
 @Component({
@@ -14,6 +16,8 @@ import { MainContentComponent } from '../mainContent/mainContent.component';
     DrawerComponent,
     MatIconModule,
     MainContentComponent,
+    MatButtonModule,
+    MatSlideToggleModule,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',

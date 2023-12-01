@@ -17,4 +17,4 @@
 
   <span *ngIf="location"> • {{ location }}</span>
 </p>
-<p id="experience-description">{{ description }}</p>
+<p id="experience-description" *ngIf="description">{{ description }}</p>

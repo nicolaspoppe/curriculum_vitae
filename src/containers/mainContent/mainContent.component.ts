@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { CloseableSectionComponent } from '../closeableSection/closeableSection.component';
 import { SingleExperienceComponent } from '../../components/singleExperience/singleExperience.component';
+import { CertificationsSectionComponent } from '../certificationsSection/certificationsSection.component';
+import { ReferencesSectionComponent } from '../referencesSection/referencesSection.component';
 
 @Component({
   selector: 'MainContent',
@@ -14,6 +16,8 @@ import { SingleExperienceComponent } from '../../components/singleExperience/sin
     RouterOutlet,
     CloseableSectionComponent,
     SingleExperienceComponent,
+    CertificationsSectionComponent,
+    ReferencesSectionComponent,
   ],
 })
 export class MainContentComponent {

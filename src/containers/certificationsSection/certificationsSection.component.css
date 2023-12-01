@@ -1,0 +1,21 @@
+#certification-text {
+  margin-left: 15px;
+}
+
+#certification-date,
+#certification-title {
+  font-weight: bold;
+}
+
+#certification-title {
+  color: #2f5496;
+}
+
+#certification-row {
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+#certification_link {
+  font-style: italic;
+}
