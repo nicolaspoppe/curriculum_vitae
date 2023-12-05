@@ -1,0 +1,35 @@
+<p>
+  <span id="education-date">{{ startDate }} - {{ endDate }}</span> •
+  <span id="education-diploma">{{ diploma }}</span>
+</p>
+<span *ngIf="distinction" class="no-margin-y">
+  <LabelWithIcon iconLabel="star" iconColor="#FFD700">
+    <ng-template #label>
+      {{ distinction }}
+      <mat-icon
+        id="mat-icon"
+        aria-hidden="false"
+        aria-label="Star icon"
+        fontIcon="star"
+        class="little-icon"
+        [style]="'color:#FFD700; font-size:24px; margin-left:5px'"
+      ></mat-icon>
+    </ng-template>
+  </LabelWithIcon>
+</span>
+<p>
+  <span id="education_school">
+    <a
+      [href]="schoolLink"
+      target="_blank"
+      *ngIf="schoolLink; else noSchoolLink"
+      >{{ school }}</a
+    >
+    <ng-template #noSchoolLink>
+      {{ school }}
+    </ng-template>
+  </span>
+
+  <span *ngIf="location"> • {{ location }}</span>
+</p>
+<p id="education-description" *ngIf="description">{{ description }}</p>

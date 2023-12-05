@@ -1,8 +1,9 @@
+<h1>Curriculum Vitae</h1>
 <CloseableSection sectionTitle="Experience">
   <ng-template #content>
     <div class="row-test">
       <div class="column-icon">
-        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="vertical-line" style="--height: 8px"></div>
         <div id="circle-line"></div>
         <div id="vertical-last-line"></div>
       </div>
@@ -17,13 +18,19 @@
             solutions for our clients. This involved handling both frontend and backend development for web and 
             mobile applications."
           location="Bruxelles"
-          [technologiesInvolved]="['React', 'NestJS']"
+          [technologiesInvolved]="[
+            'React',
+            'NestJS',
+            'TypeScript',
+            'SQL',
+            'Figma'
+          ]"
         />
       </div>
     </div>
     <div class="row-test">
       <div class="column-icon">
-        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="vertical-line" style="--height: 8px"></div>
         <div id="circle-line"></div>
         <div id="vertical-last-line"></div>
       </div>
@@ -40,13 +47,19 @@
           abilities but also provided valuable insights into integrating diverse technologies for comprehensive web 
           solutions."
           location="Bruxelles"
-          [technologiesInvolved]="['React', 'NestJS']"
+          [technologiesInvolved]="[
+            'React',
+            'NestJS',
+            'TypeScript',
+            'SQL',
+            'Figma'
+          ]"
         />
       </div>
     </div>
     <div class="row-test">
       <div class="column-icon">
-        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="vertical-line" style="--height: 8px"></div>
         <div id="circle-line"></div>
         <div id="vertical-last-line" style="--display: none"></div>
       </div>
@@ -68,39 +81,41 @@
   </ng-template>
 </CloseableSection>
 
+<CertificationsSection />
+
 <CloseableSection sectionTitle="Education">
   <ng-template #content>
     <div class="row-test">
       <div class="column-icon">
-        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="vertical-line" style="--height: 8px"></div>
         <div id="circle-line"></div>
         <div id="vertical-last-line"></div>
       </div>
       <div class="column-test">
-        <SingleExperience
+        <SingleEducation
           startDate="September 2020"
           endDate="June 2023"
-          company="Paul Lambin (IPL)"
-          companyLink="https://www.vinci.be/"
-          position="Bachelor’s degree in Business informatics"
+          school="Paul Lambin (IPL)"
+          schoolLink="https://www.vinci.be/"
+          diploma="Bachelor’s degree in Business informatics"
           location="Bruxelles"
+          distinction="GREAT HONOR"
         />
-        <!-- //TODO : make a custom SingleEducation and add the possibility to put the distinction -->
       </div>
     </div>
     <div class="row-test">
       <div class="column-icon">
-        <div id="vertical-line" style="--height: 10%"></div>
+        <div id="vertical-line" style="--height: 8px"></div>
         <div id="circle-line"></div>
         <div id="vertical-last-line" style="--display: none"></div>
       </div>
       <div class="column-test">
-        <SingleExperience
+        <SingleEducation
           startDate="September 2012"
           endDate=" June 2019"
-          company="Emile Bockstael"
-          companyLink="https://ebockstael.com/"
-          position="High School"
+          school="Emile Bockstael"
+          schoolLink="https://ebockstael.com/"
+          diploma="Higher Secondary Certificate (HSC)"
           location="Bruxelles"
         />
       </div>
@@ -108,5 +123,4 @@
   </ng-template>
 </CloseableSection>
 
-<CertificationsSection />
 <ReferencesSection />

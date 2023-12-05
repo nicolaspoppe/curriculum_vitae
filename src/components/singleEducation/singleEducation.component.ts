@@ -2,20 +2,21 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { LabelWithIconComponent } from '../labelWithIcon/labelWithIcon.component';
 
 @Component({
-  selector: 'SingleExperience',
+  selector: 'SingleEducation',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatIconModule],
-  templateUrl: './singleExperience.component.html',
-  styleUrl: './singleExperience.component.css',
+  imports: [CommonModule, RouterOutlet, MatIconModule, LabelWithIconComponent],
+  templateUrl: './singleEducation.component.html',
+  styleUrl: './singleEducation.component.css',
 })
-export class SingleExperienceComponent {
+export class SingleEducationComponent {
   @Input({ required: true })
-  company!: string;
+  school!: string;
 
   @Input()
-  companyLink!: string;
+  schoolLink!: string;
 
   @Input({ required: true })
   startDate!: string;
@@ -27,11 +28,11 @@ export class SingleExperienceComponent {
   description!: string;
 
   @Input({ required: true })
-  position!: string;
+  diploma!: string;
 
-  @Input()
+  @Input({ required: true })
   location!: string;
 
   @Input()
-  technologiesInvolved!: string[];
+  distinction!: string;
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWithIcon.component';
 import { CloseableSectionComponent } from '../closeableSection/closeableSection.component';
+import { SingleReferenceComponent } from '../../components/singleReference/singleReference.component';
 
 @Component({
   selector: 'ReferencesSection',
@@ -14,6 +15,7 @@ import { CloseableSectionComponent } from '../closeableSection/closeableSection.
     RouterOutlet,
     LabelWithIconComponent,
     CloseableSectionComponent,
+    SingleReferenceComponent,
   ],
 })
 export class ReferencesSectionComponent {}

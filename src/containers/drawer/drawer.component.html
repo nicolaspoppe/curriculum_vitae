@@ -3,58 +3,59 @@
 </div>
 <h1 class="centered-text">POPPE Nicolas</h1>
 
-<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" height="24" width="24"/> -->
+<div id="drawer-text">
+  <!-- <DrawerDivider title="Contact" /> -->
+  <LabelWithIcon
+    iconLabel="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+  >
+    <ng-template #label>
+      <a
+        href="https://www.linkedin.com/in/nicolas-poppe-101804243/"
+        target="_blank"
+      >
+        <p>
+          {{ name }}
+        </p>
+      </a>
+    </ng-template>
+  </LabelWithIcon>
 
-<LabelWithIcon
-  iconLabel="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
->
-  <ng-template #label let-data="data">
-    <a
-      href="https://www.linkedin.com/in/nicolas-poppe-101804243/"
-      target="_blank"
-    >
+  <LabelWithIcon iconLabel="email">
+    <ng-template #label>
+      <a [href]="'mailto: ' + email">
+        <p>
+          {{ email }}
+        </p>
+      </a>
+    </ng-template>
+  </LabelWithIcon>
+
+  <!-- <DrawerDivider title="Mobility" /> -->
+
+  <!-- Second section -->
+  <LabelWithIcon iconLabel="home">
+    <ng-template #label>
       <p>
-        {{ name }}
+        {{ house }}
       </p>
-    </a>
-  </ng-template>
-</LabelWithIcon>
-
-<LabelWithIcon iconLabel="email">
-  <ng-template #label let-data="data">
-    <a [href]="'mailto: ' + email">
+    </ng-template>
+  </LabelWithIcon>
+  <LabelWithIcon iconLabel="directions_bike">
+    <ng-template #label>
       <p>
-        {{ email }}
+        {{ permisA1 }}
       </p>
-    </a>
-  </ng-template>
-</LabelWithIcon>
+    </ng-template>
+  </LabelWithIcon>
+  <LabelWithIcon iconLabel="directions_car">
+    <ng-template #label>
+      <p>
+        {{ permisB }}
+      </p>
+    </ng-template>
+  </LabelWithIcon>
 
-<DrawerDivider />
+  <!-- <DrawerDivider title="Languages" /> -->
 
-<!-- Second section -->
-<LabelWithIcon iconLabel="home">
-  <ng-template #label let-data="data">
-    <p>
-      {{ house }}
-    </p>
-  </ng-template>
-</LabelWithIcon>
-<LabelWithIcon iconLabel="directions_bike">
-  <ng-template #label let-data="data">
-    <p>
-      {{ permisA1 }}
-    </p>
-  </ng-template>
-</LabelWithIcon>
-<LabelWithIcon iconLabel="directions_car">
-  <ng-template #label let-data="data">
-    <p>
-      {{ permisB }}
-    </p>
-  </ng-template>
-</LabelWithIcon>
-
-<DrawerDivider />
-
-<LanguagesSection />
+  <LanguagesSection />
+</div>

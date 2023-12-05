@@ -2,6 +2,15 @@
   cursor: pointer;
 }
 
+#clickable-section-title {
+  display: block;
+  width: fit-content;
+}
+
 #closeable-content {
   margin-left: 0px;
+}
+
+#closeable-section {
+  margin-bottom: 15px;
 }

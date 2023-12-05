@@ -1,10 +1,16 @@
 #label-with-icon {
   display: flex;
   align-items: center;
-  width: 100%;
   text-align: center;
+  width: fit-content;
 }
 
 .little-icon {
   margin-right: 5px;
+}
+
+#mat-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

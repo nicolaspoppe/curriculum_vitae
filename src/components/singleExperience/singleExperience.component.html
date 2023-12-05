@@ -18,3 +18,7 @@
   <span *ngIf="location"> • {{ location }}</span>
 </p>
 <p id="experience-description" *ngIf="description">{{ description }}</p>
+<p *ngIf="technologiesInvolved">
+  <span id="experience-techs">Technologies Involved</span> :
+  {{ technologiesInvolved.join(", ") }}
+</p>

@@ -24,10 +24,7 @@ export class LabelWithIconComponent {
   iconColor: string = 'black';
 
   @Input()
-  iconWidth: string = '24';
-
-  @Input()
-  iconHeight: string = '24';
+  iconSize: string = '24';
 
   @Input({ transform: numberAttribute })
   marginLeft: number = 0;

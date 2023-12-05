@@ -5,6 +5,7 @@ import { CloseableSectionComponent } from '../closeableSection/closeableSection.
 import { SingleExperienceComponent } from '../../components/singleExperience/singleExperience.component';
 import { CertificationsSectionComponent } from '../certificationsSection/certificationsSection.component';
 import { ReferencesSectionComponent } from '../referencesSection/referencesSection.component';
+import { SingleEducationComponent } from '../../components/singleEducation/singleEducation.component';
 
 @Component({
   selector: 'MainContent',
@@ -18,6 +19,7 @@ import { ReferencesSectionComponent } from '../referencesSection/referencesSecti
     SingleExperienceComponent,
     CertificationsSectionComponent,
     ReferencesSectionComponent,
+    SingleEducationComponent,
   ],
 })
 export class MainContentComponent {

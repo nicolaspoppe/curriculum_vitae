@@ -4,19 +4,20 @@
   [style]="'margin-left: ' + marginLeft + 'px;'"
 >
   <mat-icon
+    id="mat-icon"
     *ngIf="!iconLabel.startsWith('https://'); else elseBlock"
     aria-hidden="false"
     aria-label="Home icon"
     [fontIcon]="iconLabel"
     class="little-icon"
-    [style]="'color:' + iconColor + ';'"
+    [style]="'color:' + iconColor + '; font-size:' + iconSize + 'px'"
   ></mat-icon>
 
   <ng-template #elseBlock
     ><img
       [src]="iconLabel"
-      [height]="iconHeight"
-      [width]="iconWidth"
+      [height]="iconSize"
+      [width]="iconSize"
       class="little-icon"
   /></ng-template>
 

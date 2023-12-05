@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -7,8 +7,9 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './drawerDivider.component.html',
-  styleUrl: './drawerDivider.component.css'
+  styleUrl: './drawerDivider.component.css',
 })
 export class DrawerDividerComponent {
-
+  @Input()
+  title!: string;
 }

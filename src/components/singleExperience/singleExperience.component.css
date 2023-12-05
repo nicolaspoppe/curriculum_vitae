@@ -15,3 +15,11 @@
 #experience_company {
   font-style: italic;
 }
+
+#experience-techs {
+  /* text-decoration: underline; */
+  background-image: linear-gradient(to right, #2f5496 0%, #2f5496 100%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+}

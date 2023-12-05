@@ -1,10 +1,8 @@
 #drawer {
-  width: 25%;
+  min-width: 300px;
   height: 100%;
-  border-right: solid blue 5px;
-  background-color: #eeeeee;
-  position: fixed;
-  top: 0px;
+  border-right: solid #2f5496 2px;
+  background-color: #faffff;
   overflow-y: auto;
 }
 
@@ -15,12 +13,18 @@
 }
 
 #main-content {
-  width: 70%;
-  margin-left: 26%;
+  margin-left: 10px;
+  width: 100%;
+}
+
+#main-row {
+  width: 100%;
 }
 
 #options {
-  background-color: #2f5496;
+  background-color: #faffff;
+  border-left: solid #2f5496 2px;
+  border-bottom: solid #2f5496 2px;
   border-radius: 0% 0% 0% 25px;
   position: fixed;
   right: 0;

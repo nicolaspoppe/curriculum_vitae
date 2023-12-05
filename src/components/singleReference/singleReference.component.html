@@ -1,0 +1,13 @@
+<div id="single-reference">
+  <p class="no-margin-bottom">
+    {{ name }} • {{ position }} at
+    <a [href]="companyLink" target="_blank" id="company-reference">{{
+      company
+    }}</a>
+  </p>
+  <LabelWithIcon iconSize="20" iconLabel="phone">
+    <ng-template #label>
+      <p>{{ phone }}</p>
+    </ng-template>
+  </LabelWithIcon>
+</div>

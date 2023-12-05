@@ -1,3 +1,26 @@
 #drawer-divider {
-    border-bottom: solid blue 5px;
+  color: #2f5496;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 0.09em;
+    min-width: 37%;
+  }
+
+  &::before {
+    background: #2f5496;
+    margin-right: 15px;
+  }
+
+  &::after {
+    background: #2f5496;
+    margin-left: 15px;
+  }
 }
