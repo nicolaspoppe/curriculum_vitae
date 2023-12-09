@@ -9,8 +9,15 @@
     aria-hidden="false"
     aria-label="Home icon"
     [fontIcon]="iconLabel"
-    class="little-icon"
-    [style]="'color:' + iconColor + '; font-size:' + iconSize + 'px'"
+    [style]="
+      'color:' +
+      iconColor +
+      '; font-size:' +
+      iconSize +
+      'px; margin-right:' +
+      spacing +
+      'px;'
+    "
   ></mat-icon>
 
   <ng-template #elseBlock
@@ -18,7 +25,8 @@
       [src]="iconLabel"
       [height]="iconSize"
       [width]="iconSize"
-      class="little-icon"
+      [alt]="iconLabel"
+      [style]="'margin-right:' + spacing + 'px;'"
   /></ng-template>
 
   <ng-container [ngTemplateOutlet]="label"></ng-container>

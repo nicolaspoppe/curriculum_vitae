@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ILanguage } from '../../types/ILanguage';
-import { LabelWithIconComponent } from '../labelWithIcon/labelWithIcon.component';
+import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWithIcon.component';
 
 @Component({
   selector: 'LanguagesSection',
@@ -16,8 +16,8 @@ export class LanguagesSectionComponent {
   allLanguages: ILanguage[] = [
     {
       iconUrl: 'https://cdn-icons-png.flaticon.com/512/197/197560.png',
-      language: 'Français',
-      level: 'Langue maternelle',
+      language: 'French',
+      level: 'Native language',
     },
     {
       iconUrl:

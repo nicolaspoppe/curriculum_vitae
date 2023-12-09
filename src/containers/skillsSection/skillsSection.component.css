@@ -1,0 +1,31 @@
+#certification-text {
+  margin-left: 15px;
+}
+
+#certification-date,
+#certification-title {
+  font-weight: bold;
+}
+
+#certification-title {
+  color: #2f5496;
+}
+
+#certification-row {
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+#certification_link {
+  font-style: italic;
+}
+
+#technology-item {
+  text-align: center;
+  margin-right: 15px;
+  /* width: -webkit-fill-available; */
+}
+
+.skills-row {
+  margin-top: 15px;
+}

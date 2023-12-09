@@ -15,3 +15,12 @@
   display: grid;
   justify-content: center;
 }
+
+#job-title {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+#identity {
+  margin-bottom: 5px;
+}

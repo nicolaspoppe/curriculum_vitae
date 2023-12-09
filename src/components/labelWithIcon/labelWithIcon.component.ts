@@ -29,6 +29,9 @@ export class LabelWithIconComponent {
   @Input({ transform: numberAttribute })
   marginLeft: number = 0;
 
+  @Input({ transform: numberAttribute })
+  spacing: number = 10;
+
   @ContentChild('label')
   label!: TemplateRef<any>;
 }

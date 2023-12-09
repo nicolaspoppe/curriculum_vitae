@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWithIcon.component';
 import { DrawerDividerComponent } from '../../components/drawerDivider/drawerDivider.component';
-import { LanguagesSectionComponent } from '../../components/languagesSection/languagesSection.component';
+import { LanguagesSectionComponent } from '../languagesSection/languagesSection.component';
 
 @Component({
   selector: 'Drawer',
@@ -24,6 +24,6 @@ export class DrawerComponent {
   name: string = 'Nicolas Poppe';
   email: string = 'NicolasPoppe123@gmail.com';
   house: string = 'Meise, 1860 in Belgium';
-  permisA1: string = 'Permis A1';
-  permisB: string = 'Permis B';
+  permisA1: string = 'Class A1 License';
+  permisB: string = 'Class B License';
 }

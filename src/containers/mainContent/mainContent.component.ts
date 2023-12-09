@@ -6,6 +6,7 @@ import { SingleExperienceComponent } from '../../components/singleExperience/sin
 import { CertificationsSectionComponent } from '../certificationsSection/certificationsSection.component';
 import { ReferencesSectionComponent } from '../referencesSection/referencesSection.component';
 import { SingleEducationComponent } from '../../components/singleEducation/singleEducation.component';
+import { SkillsSectionComponent } from '../skillsSection/skillsSection.component';
 
 @Component({
   selector: 'MainContent',
@@ -20,6 +21,7 @@ import { SingleEducationComponent } from '../../components/singleEducation/singl
     CertificationsSectionComponent,
     ReferencesSectionComponent,
     SingleEducationComponent,
+    SkillsSectionComponent,
   ],
 })
 export class MainContentComponent {

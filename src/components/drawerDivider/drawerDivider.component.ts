@@ -9,7 +9,4 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './drawerDivider.component.html',
   styleUrl: './drawerDivider.component.css',
 })
-export class DrawerDividerComponent {
-  @Input()
-  title!: string;
-}
+export class DrawerDividerComponent {}

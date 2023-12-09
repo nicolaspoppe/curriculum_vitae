@@ -4,6 +4,13 @@
   border-right: solid #2f5496 2px;
   background-color: #faffff;
   overflow-y: auto;
+  position: fixed;
+  top: 0px;
+}
+
+#drawer-placeholder {
+  min-width: 300px;
+  height: 100%;
 }
 
 #homepage-content {

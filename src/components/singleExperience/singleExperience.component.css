@@ -1,11 +1,13 @@
 #experience-date {
   margin-right: 6px;
   font-weight: bold;
+  font-size: large;
 }
 
 #experience-position {
   margin-left: 6px;
   color: #2f5496;
+  font-size: large;
 }
 
 #experience-description {
