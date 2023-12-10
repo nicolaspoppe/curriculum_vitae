@@ -8,9 +8,8 @@
 }
 .column-icon {
   width: 30px;
-  display: flex; /*test*/
-  flex-direction: column; /*test*/
-  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }
 
 #vertical-line,
