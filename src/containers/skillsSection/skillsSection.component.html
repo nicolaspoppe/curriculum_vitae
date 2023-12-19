@@ -1,10 +1,10 @@
 <CloseableSection sectionTitle="Skills">
   <ng-template #content>
-    <div id="certification-row">
+    <div class="skills-container">
       <h3>Soft skills</h3>
       <p *ngFor="let mainSkill of mainSkills">• {{ mainSkill }}</p>
       <h3>Technologies</h3>
-      <div class="row skills-row">
+      <div class="row">
         <div
           *ngFor="let framework of technologies.frameworks"
           id="technology-item"
@@ -18,7 +18,7 @@
           <p>{{ framework.name }}</p>
         </div>
       </div>
-      <div class="row skills-row">
+      <div class="row">
         <div
           *ngFor="let language of technologies.languages"
           id="technology-item"

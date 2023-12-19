@@ -11,9 +11,9 @@
   color: #2f5496;
 }
 
-#certification-row {
-  margin-top: 15px;
+.certification-row {
   margin-left: 45px;
+  padding-top: 15px;
 }
 
 #certification_link {

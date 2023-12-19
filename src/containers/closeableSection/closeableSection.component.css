@@ -7,8 +7,10 @@
   width: fit-content;
 }
 
-#closeable-content {
+[id^="closeable-content"] {
   margin-left: 0px;
+  -webkit-transition: height 1s ease, opacity 1s ease;
+  transition: height 1s ease, opacity 1s ease;
 }
 
 #closeable-section {

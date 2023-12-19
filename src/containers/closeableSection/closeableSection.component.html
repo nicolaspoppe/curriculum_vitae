@@ -11,7 +11,7 @@
       <h2 class="no-margin-y">{{ sectionTitle }}</h2>
     </ng-template>
   </LabelWithIcon>
-  <div *ngIf="isOpen" id="closeable-content">
+  <div [id]="getContentId()">
     <ng-container [ngTemplateOutlet]="content"></ng-container>
   </div>
 </div>
