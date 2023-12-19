@@ -106,7 +106,7 @@ export class SkillsSectionComponent {
     },
     {
       imageUrl:
-        'https://z6n9b7j4.rocketcdn.me/wp-content/uploads/2023/08/Jira-Icon-Website.png',
+        'https://www.guidecx.com/wp-content/uploads/2023/08/Jira-Icon-Website.png',
       name: 'Jira',
     },
     {
