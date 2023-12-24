@@ -1,10 +1,4 @@
-import {
-  Component,
-  ContentChild,
-  Input,
-  OnInit,
-  TemplateRef,
-} from '@angular/core';
+import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWithIcon.component';
@@ -18,6 +12,7 @@ import { LabelWithIconComponent } from '../../components/labelWithIcon/labelWith
 })
 export class CloseableSectionComponent {
   isOpen: boolean = true;
+  isNeededToRecalculateHeight: boolean = false;
   initialHeight: number | undefined;
   @Input()
   sectionTitle!: string;
@@ -29,20 +24,43 @@ export class CloseableSectionComponent {
 
   public changeIsOpen = () => {
     this.isOpen = !this.isOpen;
-    const element = document.getElementById(this.getContentId());
-    if (!this.isOpen) {
-      element!.style.height = '0px';
-      element!.style.overflowY = 'hidden';
-      element!.style.opacity = '0';
+    try {
+      const element = document?.getElementById(this.getContentId());
+      if (!this.isOpen) {
+        element!.style.height = '0px';
+        element!.style.overflowY = 'hidden';
+        element!.style.opacity = '0';
+      } else if (this.isNeededToRecalculateHeight) {
+        this.recalculateHeight();
+        element!.style.opacity = '1';
+        this.isNeededToRecalculateHeight = false;
+      } else {
+        element!.style.height = this.initialHeight + 'px';
+        element!.style.opacity = '1';
+      }
+    } catch (e) {}
+  };
+
+  recalculateHeight = () => {
+    if (this.isOpen) {
+      try {
+        const element = document?.getElementById(this.getContentId());
+        element!.style.height = 'auto';
+        const updatedElement = document?.getElementById(this.getContentId());
+        this.initialHeight = updatedElement!.offsetHeight;
+        updatedElement!.style.height = this.initialHeight + 'px';
+      } catch (e) {}
     } else {
-      element!.style.height = this.initialHeight + 'px';
-      element!.style.opacity = '1';
+      this.isNeededToRecalculateHeight = true;
     }
   };
 
   ngAfterViewInit() {
-    const element = document?.getElementById(this.getContentId());
-    this.initialHeight = element!.offsetHeight / 2;
-    element!.style.height = this.initialHeight + 'px';
+    try {
+      const element = document?.getElementById(this.getContentId());
+      this.initialHeight = element!.offsetHeight / 2;
+      element!.style.height = this.initialHeight + 'px';
+      window.addEventListener('resize', this.recalculateHeight);
+    } catch (e) {}
   }
 }

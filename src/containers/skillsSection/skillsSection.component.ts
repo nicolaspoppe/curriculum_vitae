@@ -38,11 +38,6 @@ export class SkillsSectionComponent {
       },
       {
         imageUrl:
-          'https://seeklogo.com/images/N/nodejs-logo-D26404F360-seeklogo.com.png?v=638179441440000000',
-        name: 'Node.js',
-      },
-      {
-        imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1200px-NestJS.svg.png',
         name: 'NestJS',
       },
@@ -50,6 +45,11 @@ export class SkillsSectionComponent {
         imageUrl:
           'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png',
         name: 'ExpressJS',
+      },
+      {
+        imageUrl:
+          'https://web-strapi.mrmilu.com/uploads/flutter_logo_470e9f7491.png',
+        name: 'Flutter',
       },
     ],
     languages: [
@@ -83,6 +83,15 @@ export class SkillsSectionComponent {
         name: 'Java',
       },
       {
+        imageUrl: 'https://www.php.net/images/logos/new-php-logo.svg',
+        name: 'PHP',
+      },
+      {
+        imageUrl:
+          'https://upload.wikimedia.org/wikipedia/commons/a/a2/Dart_programming_language_logo_icon.svg',
+        name: 'Dart',
+      },
+      {
         imageUrl:
           'https://symbols.getvecta.com/stencil_28/61_sql-database-generic.90b41636a8.png',
         name: 'SQL',
@@ -113,6 +122,26 @@ export class SkillsSectionComponent {
       imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968793.png',
       name: 'Confluence',
     },
-    //TODO : add Bitbucket, Github, Gitlab, Git
+    {
+      imageUrl:
+        'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
+      name: 'Bitbucket',
+    },
+    {
+      imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg',
+      name: 'Github',
+    },
+  ];
+  others: ITechnology[] = [
+    {
+      imageUrl:
+        'https://seeklogo.com/images/N/nodejs-logo-D26404F360-seeklogo.com.png?v=638179441440000000',
+      name: 'Node.js',
+    },
+    {
+      imageUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
+      name: 'Git',
+    },
   ];
 }

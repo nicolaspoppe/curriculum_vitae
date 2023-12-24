@@ -1,25 +1,19 @@
-#certification-text {
-  margin-left: 15px;
-}
-
-#certification-date,
-#certification-title {
-  font-weight: bold;
-}
-
-#certification-title {
-  color: #2f5496;
-}
-
 .skills-container {
   margin-left: 45px;
 }
 
-#certification_link {
-  font-style: italic;
+.skills-column {
+  border-right: 2px solid #2f5496;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#technology-item {
-  text-align: center;
-  margin-right: 15px;
+.skills-items-column {
+  gap: 10px;
+  display: grid;
+}
+
+.hard-skills-section {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }

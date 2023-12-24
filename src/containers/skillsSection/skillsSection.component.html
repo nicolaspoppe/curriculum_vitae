@@ -1,47 +1,59 @@
 <CloseableSection sectionTitle="Skills">
   <ng-template #content>
     <div class="skills-container">
-      <h3>Soft skills</h3>
       <p *ngFor="let mainSkill of mainSkills">• {{ mainSkill }}</p>
-      <h3>Technologies</h3>
-      <div class="row">
-        <div
-          *ngFor="let framework of technologies.frameworks"
-          id="technology-item"
-        >
-          <img
-            [src]="framework.imageUrl"
-            height="100px"
-            width="100px"
-            [alt]="framework.name"
-          />
-          <p>{{ framework.name }}</p>
+      <div class="row hard-skills-section">
+        <!-- column 1  -->
+        <div class="skills-column" style="padding-left: 0">
+          <h4>Languages</h4>
+          <div class="skills-items-column">
+            <span *ngFor="let language of technologies.languages">
+              <LabelWithIcon [iconLabel]="language.imageUrl">
+                <ng-template #label>
+                  {{ language.name }}
+                </ng-template>
+              </LabelWithIcon>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div
-          *ngFor="let language of technologies.languages"
-          id="technology-item"
-        >
-          <img
-            [src]="language.imageUrl"
-            height="100px"
-            width="100px"
-            [alt]="language.name"
-          />
-          <p>{{ language.name }}</p>
+        <!-- column 2  -->
+        <div class="skills-column">
+          <h4>Frameworks</h4>
+          <div class="skills-items-column">
+            <span *ngFor="let framework of technologies.frameworks">
+              <LabelWithIcon [iconLabel]="framework.imageUrl">
+                <ng-template #label>
+                  {{ framework.name }}
+                </ng-template>
+              </LabelWithIcon>
+            </span>
+          </div>
         </div>
-      </div>
-      <h3>Softwares</h3>
-      <div class="row">
-        <div *ngFor="let software of softwares" id="technology-item">
-          <img
-            [src]="software.imageUrl"
-            height="100px"
-            width="100px"
-            [alt]="software.name"
-          />
-          <p>{{ software.name }}</p>
+        <!-- column 3  -->
+        <div class="skills-column">
+          <h4>Softwares</h4>
+          <div class="skills-items-column">
+            <span *ngFor="let software of softwares">
+              <LabelWithIcon [iconLabel]="software.imageUrl">
+                <ng-template #label>
+                  {{ software.name }}
+                </ng-template>
+              </LabelWithIcon>
+            </span>
+          </div>
+        </div>
+        <!-- column 4  -->
+        <div class="skills-column" style="border: none">
+          <h4>Others</h4>
+          <div class="skills-items-column">
+            <span *ngFor="let other of others">
+              <LabelWithIcon [iconLabel]="other.imageUrl">
+                <ng-template #label>
+                  {{ other.name }}
+                </ng-template>
+              </LabelWithIcon>
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -22,8 +22,15 @@ h1 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: #2f5496;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 
 .centered-text {
