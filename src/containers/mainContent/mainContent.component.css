@@ -1,11 +1,12 @@
-.row-test {
+.experience-row {
   display: flex;
 }
 
-.column-test {
+.experience-column {
   flex: 50%;
   margin-left: 16px;
 }
+
 .column-icon {
   width: 30px;
   display: flex;
